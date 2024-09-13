@@ -3,7 +3,7 @@ function carregarDadosAluno() {
     const alunoId = new URLSearchParams(window.location.search).get('id'); // Obtém o ID do aluno da URL
 
     // Busca os dados do aluno com base no ID
-    fetch(`http://localhost:4000/alunos/${alunoId}`)
+    fetch(`http://localhost:3000/alunos/${alunoId}`)
     .then(response => {
         if (!response.ok) {
             throw new Error('Erro ao buscar dados do aluno.');
@@ -52,7 +52,7 @@ function salvarAlteracoes(alunoId) {
     };
 
     // Envia os dados atualizados ao backend
-    fetch(`http://localhost:4000/alunos/${alunoId}`, {
+    fetch(`http://localhost:3000/alunos/${alunoId}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
