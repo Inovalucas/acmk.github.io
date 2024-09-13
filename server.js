@@ -5,7 +5,7 @@ const cors = require('cors');
 
 // Configurando o Express
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // Middleware
 app.use(cors());
@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 // Configuração do banco de dados MySQL
 const connection = mysql.createConnection({
-    host: '170.150.222.59',
+    host: 'localhost',
     user: 'lucaspaiva',
     password: 'lucas.lp43',
     database: 'alunos'
