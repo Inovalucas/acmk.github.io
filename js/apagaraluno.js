@@ -1,7 +1,7 @@
 // Função para apagar um aluno
 function apagarAluno(alunoId) {
     if (confirm('Tem certeza que deseja apagar este aluno?')) {
-        fetch(`http://localhost:4000/alunos/${alunoId}`, {
+        fetch(`http://localhost:3000/alunos/${alunoId}`, {
             method: 'DELETE',
         })
         .then(response => {
