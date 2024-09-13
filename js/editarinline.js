@@ -65,7 +65,7 @@ function salvarEdicaoInline(alunoId, row) {
     };
 
     // Envia os dados para o backend
-    fetch(`http://localhost:3000/alunos/${alunoId}`, {
+    fetch(`http://170.150.222.59:3000/alunos/${alunoId}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',

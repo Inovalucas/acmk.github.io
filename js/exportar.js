@@ -25,7 +25,7 @@ function formatarData(dataISO) {
 
 // Função para carregar e exportar os alunos para o Excel
 function exportarParaExcel() {
-    fetch('http://localhost:3000/alunos')  // Faz uma requisição para buscar todos os alunos
+    fetch('http://170.150.222.59:3000/alunos')  // Faz uma requisição para buscar todos os alunos
     .then(response => response.json())  // Converte a resposta em JSON
     .then(alunos => {
         const wb = XLSX.utils.book_new(); // Cria um novo workbook (arquivo Excel)
