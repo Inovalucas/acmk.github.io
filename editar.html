@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Aluno - ACMK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo ACMK">
+        <h1>Editar Aluno</h1>
+    </header>
+
+    <form id="formEdicao">
+        <label for="editNome">Nome:</label>
+        <input type="text" id="editNome" required>
+
+        <label for="editDataNascimento">Data de Nascimento:</label>
+        <input type="date" id="editDataNascimento" required>
+
+        <label for="editModalidade">Modalidade:</label>
+        <select id="editModalidade" required>
+            <option value="Karaté">Karaté</option>
+            <option value="Hidroginástica">Hidroginástica</option>
+            <option value="Natação">Natação</option>
+        </select>
+
+        <label for="editGenero">Gênero:</label>
+        <select id="editGenero" required>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+        </select>
+
+        <div id="editFaixaField" style="display: none;">
+            <label for="editFaixa">Faixa:</label>
+            <select id="editFaixa">
+                <option value="Branca">Branca</option>
+                <option value="Amarela">Amarela</option>
+                <option value="Vermelha">Vermelha</option>
+                <option value="Laranja">Laranja</option>
+                <option value="Verde">Verde</option>
+                <option value="Azul">Azul</option>
+                <option value="Roxa">Roxa</option>
+                <option value="Marrom">Marrom</option>
+                <option value="Preta">Preta</option>
+            </select>
+        </div>
+
+        <label for="editHorario">Horário:</label>
+        <input type="time" id="editHorario" required>
+
+        <label for="editTipo">Tipo:</label>
+        <select id="editTipo" required>
+            <option value="Particular">Particular</option>
+            <option value="Projeto">Projeto</option>
+        </select>
+
+        <button type="submit">Salvar Alterações</button>
+    </form>
+
+    <a href="alunos.html">Voltar à Lista de Alunos</a>
+
+    <footer>
+        <p>Associação Corpo e Mente de Karate - Tucumã - Pará</p>
+    </footer>
+
+    <script src="js/editaraluno.js"></script>
+    <script src="js/editarinline.js"></script>
+    <script src="js/horarios.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/filtrar.js"></script>
+
+    <script src="js/apagaraluno.js"></script>
+    
+
+</body>
+</html>

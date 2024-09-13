@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos Cadastrados - ACMK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo ACMK">
+        <h1>Alunos Cadastrados</h1>
+    </header>
+
+    <!-- Filtros para escolher a modalidade, tipo de aluno e horário -->
+    <form id="filtroAlunos">
+        <label for="filtroModalidade">Modalidade:</label>
+        <select id="filtroModalidade">
+            <option value="">Todas as Modalidades</option>
+            <option value="Karaté">Karaté</option>
+            <option value="Hidroginástica">Hidroginástica</option>
+            <option value="Natação">Natação</option>
+        </select>
+
+        <label for="filtroTipo">Tipo:</label>
+        <select id="filtroTipo">
+            <option value="">Todos os Tipos</option>
+            <option value="Particular">Particular</option>
+            <option value="Projeto">Projeto</option>
+        </select>
+
+        <label for="filtroHorario">Horário:</label>
+        <select id="filtroHorario">
+            <option value="">Todos os Horários</option>
+        </select>
+
+        <button type="submit">Filtrar</button>
+    </form>
+
+    <table id="tabelaAlunos" border="1" style="width: 100%; margin-top: 20px;">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Modalidade</th>
+                <th id="faixaHeader">Faixa</th>
+                <th>Horário</th>
+                <th>Data de Nascimento</th>
+                <th>Tipo</th>
+                <th>Gênero</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="listaAlunos">
+            <!-- Os alunos serão inseridos aqui via JavaScript -->
+        </tbody>
+    </table>
+
+    <button id="exportarExcel">Exportar para Excel</button>
+
+    <a href="index.html">Voltar ao Cadastro</a>
+
+    <footer>
+        <p>Associação Corpo e Mente de Karate - Tucumã - Pará</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="js/horarios.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/filtrar.js"></script>
+    <script src="js/editaraluno.js"></script>
+    <script src="js/apagaraluno.js"></script>
+    <script src="js/exportar.js"></script>
+</body>
+</html>

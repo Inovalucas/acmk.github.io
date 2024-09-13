@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos - ACMK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo ACMK">
+        <h1>Cadastro de Alunos - ACMK</h1>
+    </header>
+
+    <form id="formCadastro">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" required>
+
+        <p id="idadeCalculada">Idade: <span id="idade">0</span> anos</p>
+
+        <label for="modalidade">Modalidade:</label>
+        <select id="modalidade" required>
+            <option value="">Selecione uma modalidade</option>
+            <option value="Karaté">Karaté</option>
+            <option value="Hidroginástica">Hidroginástica</option>
+            <option value="Natação">Natação</option>
+        </select>
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="">Selecione o Gênero</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+        </select>
+
+        <!-- Campo de faixa (escondido por padrão) -->
+        <div id="faixaField" style="display: none;">
+            <label for="faixa">Faixa:</label>
+            <select id="faixa">
+                <option value="">Selecione a faixa</option>
+                <option value="Branca">Branca</option>
+                <option value="Amarela">Amarela</option>
+                <option value="Vermelha">Vermelha</option>
+                <option value="Laranja">Laranja</option>
+                <option value="Verde">Verde</option>
+                <option value="Roxa">Roxa</option>
+                <option value="Marrom">Marrom</option>
+                <option value="Preta">Preta</option>
+            </select>
+        </div>
+
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" required>
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" required>
+            <option value="Particular">Particular</option>
+            <option value="Projeto">Projeto</option>
+        </select>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <a href="alunos.html">Ver Matriculas</a>
+
+    <footer>
+        <p>Associação Corpo e Mente de Karate - Tucumã - Pará</p>
+    </footer>
+
+    <script src="js/modalidade.js"></script>
+</body>
+</html>
