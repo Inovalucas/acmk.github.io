@@ -1,6 +1,6 @@
 // Função para carregar os horários do backend e preencher o select de horários
 function carregarHorarios() {
-    fetch('http://170.150.222.59:4000/horarios')  // Faz uma requisição GET para buscar os horários do backend
+    fetch('http://localhost:4000/horarios')  // Faz uma requisição GET para buscar os horários do backend
     .then(response => response.json())  // Converte a resposta para JSON
     .then(horarios => {
         console.log('Horários recebidos do backend:', horarios);  // Log para verificar os horários recebidos

@@ -68,7 +68,7 @@ document.getElementById('formCadastro').addEventListener('submit', function (e) 
     };
 
     // Envia os dados do aluno ao backend
-    fetch('http://170.150.222.59:4000/cadastrar', {
+    fetch('http://localhost:4000/cadastrar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
