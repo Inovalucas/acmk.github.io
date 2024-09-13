@@ -25,7 +25,7 @@ function exibirAlunos() {
     atualizarVisibilidadeColunaFaixa();
 
     // Faz uma requisição GET para buscar todos os alunos do backend
-    fetch(`http://localhost:3000/alunos?modalidade=${filtroModalidade}&tipo=${filtroTipo}&horario=${filtroHorario}`)
+    fetch(`http://localhost:4000/alunos?modalidade=${filtroModalidade}&tipo=${filtroTipo}&horario=${filtroHorario}`)
         .then(response => response.json())
         .then(alunos => {
             const listaAlunosTbody = document.getElementById('listaAlunos');

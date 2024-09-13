@@ -11,7 +11,7 @@ document.getElementById('formCadastro')?.addEventListener('submit', function (e)
 
     const aluno = { nome, dataNascimento, idade, modalidade, faixa: '', horario, tipo, genero };
 
-    fetch('http://localhost:3000/cadastrar', {
+    fetch('http://localhost:4000/cadastrar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(aluno),
